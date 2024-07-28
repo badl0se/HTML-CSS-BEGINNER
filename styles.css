@@ -5,6 +5,10 @@
     font-family: 'Inter', sans-serif;
 }
 
+.google-header {
+    font-family: 'Poppins', sans-serif;
+}
+
 header {
     display: flex;
     align-items: center;
@@ -17,4 +21,17 @@ header {
     display: flex;
     align-items: center;
     gap: 14px;
+}
+
+.img-button {
+    border: none;
+    background: transparent;
+
+}
+
+.img-button img {
+    width: 40px;
+    aspect-ratio: 1 / 1;
+    overflow: hidden;
+    border-radius: 100%;
 }
