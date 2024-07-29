@@ -3,10 +3,18 @@
     margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
+    color: #0f172a
 }
 
 body {
     font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+button {
+    cursor: pointer;
 }
 
 .google-header {
@@ -45,17 +53,16 @@ header {
     border-radius: 100%;
     display: grid;
     place-items: center;
-    text-decoration: none;
+    text-decoration: none
 }
 
 .icon-link:hover {
-    background: rgb(238, 237, 237);
+    background: rgb(240, 240, 240);
 }
 
 .img-button {
     border: none;
     background: transparent;
-
 }
 
 .img-button img {
@@ -63,4 +70,72 @@ header {
     aspect-ratio: 1 / 1;
     overflow: hidden;
     border-radius: 100%;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.title-text {
+    font-size: 3rem ;
+}
+
+.input-bar {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    max-width: 500px;
+    border: 1px solid rgb(240, 240, 240);
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+.input-bar:hover, .input-bar:focus-within {
+    box-shadow: 0 0 4px 1px rgb(241, 241, 241);
+}
+
+.input-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+.input-bar div {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.input-icon {
+    background: transparent;
+    border: none;
+}
+
+.input-icon:hover {
+    opacity: 0.6;
+}
+
+.button-grid {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.button-grid button {
+    padding: 0.5rem 1rem;
+    border: 1px solid transparent;
+    background: rgb(248, 248, 248);
+    border-radius: 0.25rem;
+}
+
+.button-grid button:hover {
+    border: 1px solid slategray
 }
