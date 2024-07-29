@@ -1,2 +1,2 @@
 # Google Home Page Demo
-jakesgoogle.netlify.app
+https://jakesgoogle.netlify.app
